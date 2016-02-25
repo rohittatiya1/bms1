@@ -1,0 +1,46 @@
+<div type="text/ng-template" id="view/CategoryPopup.html">
+    
+    <div class="modal-header">
+      <label>Category:{{cat}}</label>
+
+    </div>
+    <div class="modal-header">
+      <label style="text-align:right">Price:{{price}}</label>
+    </div>
+
+    <div class="modal-body">
+
+
+      <div class="btn-group btn-group-justified" role="group" aria-label="">
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-default" ng-click="prevSeat()"><span class="glyphicon glyphicon-chevron-left"></span></button>
+        </div>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-default" ng-click="eventClicked()" ng-model="button2txt">{{button2txt}}</button>
+        </div>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-default" ng-click="nextSeat()"><span class="glyphicon glyphicon-chevron-right"></span></button>
+        </div>
+      </div>
+        <div style="color:red"><label id="seatselection"></label></div>
+
+        <div>
+      <label style="text-align:right">Total:{{total}}</label>
+    </div>
+
+
+    </div>
+    <div class="modal-footer">
+<!--
+        <ul>
+  <li ng="message in messages">
+    
+    <button ng-click="messages.$save(message.Avai_seat-button2txt)">OK</button>
+  </li>
+</ul>
+-->
+      <button class="btn btn-primary" type="button" ng-click="ok(button2txt)">OK</button>
+      <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+    </div>
+
+</div>

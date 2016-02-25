@@ -1,0 +1,88 @@
+ <style>
+                 .black{
+                     
+/*                 background-color:black; color: white;*/
+                 }
+                 
+                 .mapdesign{
+                     
+                     overflow:auto;
+                 }
+            .firstrow{
+                padding:50px 50px 50px 50px;
+                
+                height:200px;
+                border: 2px solid #ccc;
+                text-align: center;
+            }
+             .secoundrow{    
+                 padding:50px 50px 50px 50px;
+                
+                height:200px;
+                border: 2px solid #ccc;
+                 text-align: center;
+            }
+             .secoundrow-sub{    
+                 padding:10px 10px 10px 10px;
+                
+                height:40px;
+                border: 2px solid #ccc;
+            }
+                 
+           
+             .thirdrow{
+                 padding:50px 50px 50px 50px;
+                
+                height:200px;
+                border: 2px solid #ccc;
+                 text-align: center;
+            }
+            
+           .avaistand{
+                        background-color: #228B22;
+                        height:30px;
+                        width: 30px;
+                    }
+            .soldstand{
+                        background-color: #FF0000;
+                        height:30px;
+                        width: 30px;
+                    }
+        
+                 
+                 @media screen and (max-width: 768px) {
+                          .mapdesign{
+                     width:100%;
+                     overflow:auto;
+                 }
+            .firstrow{
+                padding:20px 20px 20px 20px;
+                
+                height:100px;
+                border: 2px solid #ccc;
+            }
+             .secoundrow{    
+                 padding:20px 20px 20px 20px;
+                
+                height:150px;
+                border: 2px solid #ccc;
+            }
+             .secoundrow-sub{    
+                 padding:10px 10px 10px 10px;
+               
+                border: 2px solid #ccc;
+            }
+                 
+           
+             .thirdrow{
+                 padding:20px 20px 20px 20px;
+                
+                height:100px;
+                border: 2px solid #ccc;
+            }
+            
+        
+                    }
+        </style>
+        
+        

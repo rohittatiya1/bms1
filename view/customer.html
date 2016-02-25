@@ -1,0 +1,43 @@
+<div class="container" >
+  
+  <form role="form">
+      <br />
+      <label>Customer Details</label>
+      <br />
+      <div class="col-xs-12">
+    <div class="form-group">
+      
+      <input type="text" ng-maxlength="20" class="form-control" id="firstname" name="firstname" ng-model="customer.first_name" placeholder="First Name"><label id="fname" style="color:red;"></label>
+    </div>
+      <div class="form-group">
+      
+      <input type="text" ng-maxlength="20" class="form-control" id="lastname" ng-model="customer.last_name" placeholder="Last Name"><label id="lname" style="color:red;"></label>
+    </div>
+      <div class="form-group">
+      
+      <input type="text" class="form-control" id="email" placeholder="Enter Email" name="email"ng-model="customer.email" /><label id="mail" style="color:red;"></label>
+    </div>
+	
+    <div class="form-group">
+      
+      <input type="number" ng-maxlength="10" class="form-control"id="mob" name="mob" ng-model="customer.mob_no" placeholder="Enter Mobile No"/><label id="number" style="color:red;"></label>
+    </div>
+    <div class="form-group">
+      
+
+      <input type="text" ng-maxlength="20" class="form-control" id="address" name="address"ng-model="customer.address" placeholder="Enter Address"><label id="add" style="color:red;"></label>
+
+    </div>
+        <div class="form-group">
+        <button type="button" class="btn btn-default" ng-click="goBackOnHome()" >Go Back</button>
+        
+          
+        <button type="button" class="btn btn-primary" style="margin-right:15px;padding-left:5px" ng-click="custvalidation(customer)">Make Payment</button>
+        </div>
+  
+      </div>
+   
+      </form>
+</div>
+
+

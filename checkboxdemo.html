@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" ng-controller="myCtrl">
+<div ng-repeat="a in range(10) track by $index"><input type="checkbox" /></div>
+
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.range = function(n) {
+        return new Array(n);
+    };
+});
+</script>
+
+</body>
+</html>

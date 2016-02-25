@@ -1,0 +1,52 @@
+<div class="container">
+    
+    <div class="btn-group btn-group-justified" role="group" aria-label="">
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default" ng-disabled="true"><span class="glyphicon glyphicon-chevron-left"></span></button>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default" ng-click="gotoEvent()" title="*Double Click To Go Back" ng-bind="sport"></button>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default" ng-disabled="true"><span class="glyphicon glyphicon-chevron-right"></span></button>
+      </div>
+    </div>
+    <div><label>Click to go on back page</label></div>
+    <br />
+    <br />
+    
+    <div class="btn-group btn-group-justified" role="group" aria-label="">
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default" ng-click="prevMatch()"><span class="glyphicon glyphicon-chevron-left"></span></button>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default" ng-click="gotoMap()" title="*Click To Go Next"><div style="height:20px" scrolldelay="100"><marquee >{{button1txt}}</marquee></div></button>
+      </div>
+      <div class="btn-group" role="group">
+        <button type="button" class="btn btn-default" ng-click="nextMatch()"><span class="glyphicon glyphicon-chevron-right"></span></button>
+      </div>
+    </div>
+    <div><label>Click to go on next page</label></div>
+<br />
+
+    <div class="row">
+      <div class="col-xs-4">
+        <label for "date">Date(mm-dd-yyyy)</label>
+      </div>
+
+      <div class="col-xs-4">
+        <label for "place">Address </label>
+      </div>
+      <div class="col-xs-4">
+        <label for "place">City </label>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-xs-4">{{ date }}</div>
+
+      <div class="col-xs-4">{{ place }}</div>
+      <div class="col-xs-4">{{ city }}</div>
+    </div>
+    
+</div>
